@@ -1,0 +1,86 @@
+body {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.349), rgb(255, 88, 88));
+    font-family: "Play", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+button {
+    width: 100px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    border: rgb(0, 0, 0) 5px solid;
+}
+button:hover{
+    color:  rgb(255, 0, 0);
+    border: 5px solid;
+}
+
+button:focus { outline: none; }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.player1Side, .player2Side {
+    margin-left: auto;
+    margin-right: auto;
+}
+.player1Side{
+    color: rgb(255, 68, 68);
+}
+
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 500px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.377);
+    
+}
+.col {
+    /* FIX ME - start from bottom */
+    display: flex;
+    flex-direction: column-reverse;
+    border: solid black 2px;
+}
+.col:hover{
+    background-color: rgba(139, 139, 139, 0.753);
+}
+.player1, .player2 {
+    pointer-events: none;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    margin-bottom:1px ;
+}
+.player1 {
+    /*background-color: red; */
+    
+    background-image: url("images/Games_BoardGames_Artboard_14-512.png"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 130px 130px;
+   
+}
+.player2 {
+    background-image: url("images/black.png"); 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 130px 130px;
+  
+}
+
+    
